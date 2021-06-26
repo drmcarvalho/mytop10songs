@@ -3,3 +3,4 @@ test.json
 .pytest_cache
 .idea/
 __pycache__
+venv
