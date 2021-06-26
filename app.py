@@ -12,6 +12,14 @@ dynamodb.init('collection.json')
 
 
 def formatResponse(guess, artist, songs, uuid):
+    """
+    Decodifica a string em bytes liteal em utf-8 e monta o corpo da resposta da API.
+    :param guess: termo para a busca.
+    :param artist: nome do artista.
+    :param songs: lista de musicas.
+    :param uuid: uuid versao 4.
+    :return: dict contento o corpo da resposta HTTP.
+    """
     songsDecode = []
     if isinstance(artist, bytes):
         artist = artist.decode('utf-8')
