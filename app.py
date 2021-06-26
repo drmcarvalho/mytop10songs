@@ -92,8 +92,8 @@ def requestAction(q, cache):
     return responseFormatted
 
 
-@app.route('/api/v1/song')
-def song():
+@app.route('/api/v1/songs')
+def songs():
     q = request.args.get('q')
     withCache = request.args.get('cache', default='1').lower()
     if not q:
