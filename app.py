@@ -7,6 +7,7 @@ import rediscache
 
 
 app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
 
 dynamodb.init('collection.json')
 
