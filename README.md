@@ -4,21 +4,21 @@ Esta aplicação tem o objetivo de obter as 10 músicas mais populares de um det
 
 ```
 {
-  "artist": "U2", 
-  "guess": "U2", 
+  "artist": "U2",
+  "guess": "U2",
   "songs": [
-    "One by U2", 
-    "With or Without You by U2", 
-    "Sunday Bloody Sunday by U2", 
-    "I Still Haven't Found What I'm Looking For by U2", 
-    "U2 by Ernia", 
-    "Pride (In the Name of Love) by U2", 
-    "Beautiful Day by U2", 
-    "Get Out of Your Own Way by U2 (Ft. Kendrick Lamar)", 
-    "\u200bu21 by Mert (Ft. Samra)", 
+    "One by U2",
+    "With or Without You by U2",
+    "Sunday Bloody Sunday by U2",
+    "I Still Haven't Found What I'm Looking For by U2",
+    "U2 by Ernia",
+    "Pride (In the Name of Love) by U2",
+    "Beautiful Day by U2",
+    "Get Out of Your Own Way by U2 (Ft. Kendrick Lamar)",
+    "​u21 by Mert (Ft. Samra)",
     "Where the Streets Have No Name by U2"
-  ], 
-  "uuid": "11b561d6-33bc-4ba8-b3e3-b801562d3d0c"
+  ],
+  "uuid": "56ba8f16-5ecc-49d6-bee5-c6ef7bfb3a08"
 }
 ```
 
