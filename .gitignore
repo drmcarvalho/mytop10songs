@@ -1,0 +1,5 @@
+collection.json
+test.json
+.pytest_cache
+.idea/
+__pycache__
