@@ -6,7 +6,7 @@ import time
 import app
 import pytest
 import dynamodb
-import util
+from uuid import uuid4
 from tinydb import Query
 
 
@@ -67,7 +67,7 @@ def test_redis():
     assert a
 
     rediscache.setCache('l',
-                        {'term': 'term', 'artist': 'artist test', 'songs': ['song1', 'song2'], 'id': util.uuidV4()})
+                        {'term': 'term', 'artist': 'artist test', 'songs': ['song1', 'song2'], 'id': str(uuid4())})
     li = rediscache.getCache('l')
     assert li
 
@@ -87,7 +87,7 @@ def test_redis_expiration():
 
 def test_dynamofake():
     dynamodb.init('test.json')
-    dynamodb.insert({'nome': 'gato', 'id': util.uuidV4()})
+    dynamodb.insert({'nome': 'gato', 'id': str(uuid4())})
     Pessoa = Query()
     p = dynamodb.search(Pessoa.nome == 'gato')
     print(p)

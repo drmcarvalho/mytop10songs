@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from tinydb import Query
-import util
+from uuid import uuid4
 import dynamodb
 import genius
 import rediscache
@@ -78,9 +78,10 @@ def requestAction(q, cache):
         addArtistCache(fromDynamo[0]['artist'], q)
         addUUIDCache(fromDynamo[0]['uuid'], q)
         return fromDynamo[0]
+
     response = genius.search(q)
     artist = genius.getArtist(response)
-    newUuid = util.uuidV4()
+    newUuid = str(uuid4())
     responseFormatted = formatResponse(q, artist, genius.songs(response), newUuid)
     dynamodb.insert(responseFormatted)
     '''withCache = rediscache.getCache(q)
