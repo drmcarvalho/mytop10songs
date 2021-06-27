@@ -35,12 +35,14 @@ def test_redis_v():
     assert rediscache.getCache('v')
 
 
-@pytest.mark.skip()
+@pytest.mark.skip(reason="Usar estrutura em lista no redis nao foi possivel.")
 def test_redis_list():
     rediscache.setCacheList('lista', 'm1', 'm3')
 
 
-@pytest.mark.skip()
+@pytest.mark.skip(
+    reason='Tentativa de inserir varios conjuntos de chave e valor com a chave igual mais valores diferentes, o que resultou em alteracao do dado existente.'
+)
 def test_redis_one():
     rediscache.addCache('v', '1')
     rediscache.addCache('v', '2')
@@ -51,7 +53,9 @@ def test_redis_one():
     print(v2)
 
 
-@pytest.mark.skip()
+@pytest.mark.skip(
+    reason="A implentacao de armazenamento de estrutura de dados mais complexas no redis aumentou a complexidade."
+)
 def test_redis():
     rediscache.setCache('q', {'value': 'um valor'})
     rediscache.setCache('a', {'value': 'um outro valor'})
