@@ -1,3 +1,6 @@
+"""
+Modulo de integracao com a API do Genius.
+"""
 import requests
 
 

@@ -1,3 +1,6 @@
+"""
+Modulo de simulacao do dynamoDB atraves do TinyDB. Possui algumas funcoes para leitura e escrita.
+"""
 from tinydb import TinyDB, Query
 
 
