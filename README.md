@@ -47,7 +47,7 @@ Acessa o diretório do projeto usando o seguinte comando:
 
 `$ cd mytop10songs`
 
-Em seguida vamos instalar as depedencias executando o seguinte comando:
+Em seguida vamos instalar as depedencias:
 
 `$ pip install -r requirements.txt`
 
