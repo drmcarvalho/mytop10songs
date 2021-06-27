@@ -28,7 +28,7 @@ Esta aplicação tem o objetivo de obter as 10 músicas mais populares de um det
 - Salvar no DynamoDB (TinyDB)
 - Salvar no Redis para criação de cache e com retenção de 7 dias
 
-## Tecnologias e requerimentos
+## Tecnologias e requisitos
 
 - Requer Python >= 3.6.9
 - Requests para integração com Genius
