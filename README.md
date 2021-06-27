@@ -84,7 +84,7 @@ curl --request GET \
 
 ## Testes
 
-O pytest é foi usado para facilitar nos testes unitários, para testar basta executar:
+O [pytest](https://docs.pytest.org/en/6.2.x/) é foi usado para facilitar nos testes unitários, para testar basta executar:
 
 `pytest tests.py`
 
