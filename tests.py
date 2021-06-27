@@ -30,6 +30,11 @@ def test_response():
     assert app.formatResponse('termo', ['m1', 'm2'], 'teste', 'uuid')
 
 
+def test_redis_v():
+    rediscache.addCache('v', 'foo')
+    assert rediscache.getCache('v')
+
+
 @pytest.mark.skip()
 def test_redis_list():
     rediscache.setCacheList('lista', 'm1', 'm3')
