@@ -43,7 +43,7 @@ Para executar a aplicação primeiramente precisamos baixar o repositório para 
 
 `$ git clone https://github.com/drmcarvalho/mytop10songs.git`
 
-Acessa o diretório do projeto usando o seguinte comando:
+Acesse o diretório do projeto usando o seguinte comando:
 
 `$ cd mytop10songs`
 
