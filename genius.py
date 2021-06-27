@@ -34,8 +34,7 @@ def songs(data):
     :param data: dict com os dados da API do Genius
     :return: list com os nomes das musicas
     """
-    songs = [formatStr(song['result']['full_title']) for song in data['response']['hits']]
-    return songs
+    return [formatStr(song['result']['full_title']) for song in data['response']['hits']]
 
 
 def getArtist(data):
